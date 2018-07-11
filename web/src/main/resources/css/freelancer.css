@@ -1084,3 +1084,36 @@ div#maincontent {
     padding: 0 100px 20px 20px;
   }
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  background: white;
+  padding: 10px;
+  margin: 5%;
+}
+
+.card-title{
+  color: black;
+  font-size: large;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.card-text{
+  color: black;
+  font-size: 14px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add rounded corners to the top left and the top right corner of the image */
+.car-image {
+  border-radius: 5px 5px 0 0;
+  height: 150px;
+  width: 300px;
+}
