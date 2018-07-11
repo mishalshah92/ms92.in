@@ -3057,18 +3057,21 @@ fieldset[disabled] a.btn {
   pointer-events: none;
 }
 .btn-default {
-  color: #333;
+  /*color: #333;*/
+  color: #18BC9C;
   background-color: #fff;
   border-color: #ccc;
 }
 .btn-default:focus,
 .btn-default.focus {
-  color: #333;
+  /*color: #333;*/
+  color: #18BC9C;
   background-color: #e6e6e6;
   border-color: #8c8c8c;
 }
 .btn-default:hover {
-  color: #333;
+  /*color: #333;*/
+  color: #18BC9C;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
@@ -6774,3 +6777,12 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+.rounded-circle {
+  border-radius: 50% !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

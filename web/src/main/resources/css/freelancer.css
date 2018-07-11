@@ -440,9 +440,7 @@ fieldset[disabled] .btn-primary.active {
 }
 .btn-white {
   color: white;
-  background-color: #18BC9C;
-  border-color: #fff;
-  font-weight: 700;
+  font-weight: 900;
 }
 .btn-success:hover,
 .btn-success:focus,
@@ -459,8 +457,7 @@ fieldset[disabled] .btn-primary.active {
 .btn-white:active,
 .btn-white.active,
 .open .dropdown-toggle.btn-success {
-  color: #128f76;
-  background-color: #fff;
+  color: white;
   border-color: #fff;
 }
 
