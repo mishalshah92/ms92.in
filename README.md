@@ -1,33 +1,24 @@
-# SimplePingManager 
+# www.ms92.com 
 
 ## Introduction
 
-This is the Simple Ping Manager Service. A small project that can help to health-check of any URL.
-Just enter your URL and IP address and wait for the response.
+This is the portfolio website.
 
 ## Building
 
 First ensure your development environment is up-to-date. You will need to
-install gradle 3.3+ on macOS, Linux.
+install maven on macOS, Linux.
 
 Next clone this repository and run make:
 
     $ make
     
-    Note: This build is a java application.
+    Note: This build is a static website.
     
-To build the docker image run:
-    
-     $ make docker
-    
-Application jar available on below path
+Application zip available on below path
  
-    taget/simple-ping-manager.jar
+    taget/website-bin.zip
     
 To run the jar file, run below command.
     
-    java -jar simple-ping-manager.jar
-
-Access application on
-
-    http://[ip]:8080/
+    Exract the zip and run index.html
