@@ -31,8 +31,8 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Mishal Shah</span>
         <span class="d-none d-lg-block">
-        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/mishal_shah_profile.jpg" alt="">
-      </span>
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/mishal_shah_profile.jpg" alt="">
+            </span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,22 +55,23 @@
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mb-2">
                 <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
             </li>
+            <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/mishalshah92/" target="_blank"
+                   class="btn btn-outline-resume btn-round">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="data/Mishal_DevOps_Engineer.pdf" target="_blank" class="btn btn-outline-resume"
+                   data-toggle="Download Portfolio">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a href="mailto:info@ms92.in" class="btn btn-outline-resume">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </li>
         </ul>
-    </div>
-    <div>
-        <a href="https://www.linkedin.com/in/mishalshah92/" target="_blank" class="btn btn-outline-resume btn-round">
-            <i class="fab fa-linkedin-in"></i>
-        </a>
-        <a href="data/Mishal_DevOps_Engineer.pdf" target="_blank" class="btn btn-outline-resume"
-           data-toggle="Download Portfolio">
-            <i class="fas fa-file-pdf"></i>
-        </a>
-        <a href="mailto:info@ms92.in" class="btn btn-outline-resume">
-            <i class="fas fa-envelope"></i>
-        </a>
     </div>
 </nav>
 
@@ -81,8 +82,23 @@
             <h1 class="mb-0">Mishal
                 <span class="text-primary">Shah</span>
             </h1>
-            <div class="subheading mb-5">Ahmedabad, GJ, IN 380061 · +91 (760) 045-4376 ·
+            <div class="subheading mb-3">Ahmedabad, GJ, IN 380061 · +91 (760) 045-4376 ·
                 <a href="mailto:info@ms92.in">info@ms92.in</a>
+            </div>
+            <div class="mb-5">
+                <a href="https://www.linkedin.com/in/mishalshah92/" target="_blank"
+                   class="btn btn-outline-resume-inverse btn-round"
+                   data-toggle="tooltip" title="LinkedIn" data-placement="bottom">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="data/Mishal_DevOps_Engineer.pdf" target="_blank" class="btn btn-outline-resume-inverse"
+                   data-toggle="tooltip" title="Portfolio" data-placement="bottom">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+                <a href="mailto:info@ms92.in" class="btn btn-outline-resume-inverse"
+                   data-toggle="tooltip" title="Email" data-placement="bottom">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
             <p class="lead mb-5 text-justify">
                 Versatile DevOps Engineer with 4.5 years of experience. Starting as a java developer, having experience
@@ -93,7 +109,6 @@
                 having expertise
                 to architect the server less solutions.
             </p>
-
             <div class="mrtop mb-0 text-align-right">
                 <ul class="list-inline dev-icons">
                     <li class="list-inline-item">
@@ -450,6 +465,12 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/resume.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 
 </body>
 
