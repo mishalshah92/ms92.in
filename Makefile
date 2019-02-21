@@ -5,7 +5,8 @@ build:
 .PHONY: build
 
 deploy:
-	sh package.sh
+    sh build.sh
+	sh deploy.sh
 
 .PHONY: sonarqube
 
