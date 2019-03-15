@@ -64,7 +64,8 @@ do
 
       ./terraform \
            plan \
-             -var-file="deploy/variables/${DEPLOYMENT_ENV}.tfvars" \
+             -var-file="${TF_PATH}/variables/commons.tfvars" \
+             -var-file="${TF_PATH}/variables/${DEPLOYMENT_ENV}.tfvars" \
              -var "aws_region=${aws_region}"  \
              -out plan_${aws_region} \
              -lock=true

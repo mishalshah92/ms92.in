@@ -12,10 +12,10 @@ fi
 
 source deploy/variables/${DEPLOYMENT_ENV}.properties
 
-## Installing Terraform
+## Executing Terraform
 
 if [[ "$DEPLOYMENT_ENV" == "local" ]]; then
-    sh deploy/scripts/deploy_local.sh ${TF_PATH} $AWS_REGIONS
+    sh deploy/scripts/terminate_local.sh ${TF_PATH} $AWS_REGIONS
 elif [[ "$DEPLOYMENT_ENV" == "prod" ]]; then
-    sh deploy/scripts/deploy_prod.sh ${TF_PATH} $AWS_REGIONS
+    sh deploy/scripts/terminate_prod.sh ${TF_PATH} $AWS_REGIONS
 fi

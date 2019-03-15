@@ -49,27 +49,18 @@ do
 
    {
 
-      echo "INFO: Terraform Planning..."
+      echo "INFO: Terraform Destroying..."
 
       terraform \
-           plan \
-             -var-file="${TF_PATH}/variables/commons.tfvars" \
-             -var-file="${TF_PATH}/variables/${DEPLOYMENT_ENV}.tfvars" \
-             -var "aws_region=${aws_region}"  \
-             -out plan_${aws_region} \
-             -lock=true \
-             ${TF_PATH}
-
-  } && {
-
-      echo "INFO: Terraform Executing..."
-
-      terraform \
-        apply \
-          plan_${aws_region}
+           destroy \
+            -var-file="${TF_PATH}/variables/commons.tfvars" \
+            -var-file="${TF_PATH}/variables/${DEPLOYMENT_ENV}.tfvars" \
+            -var "aws_region=${aws_region}"  \
+            -auto-approve \
+            ${TF_PATH}
 
   }
 
 done
 
-echo "INFO: Infra build complete."
+echo "INFO: Infra destroy complete."

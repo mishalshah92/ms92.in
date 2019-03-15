@@ -7,14 +7,21 @@ resource "aws_s3_bucket" "create_bucket" {
     error_document = "${var.error_page}"
   }
 
+  server_side_encryption_configuration {
+    rule {
+      "apply_server_side_encryption_by_default" {
+        sse_algorithm = "AES256"
+      }
+    }
+  }
+
   cors_rule {
     allowed_headers = [
       "*",
     ]
 
     allowed_methods = [
-      "PUT",
-      "POST",
+      "GET",
     ]
 
     allowed_origins = [

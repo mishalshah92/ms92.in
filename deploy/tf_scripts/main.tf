@@ -8,7 +8,7 @@ module "create_bucket" {
 
 resource "null_resource" "upload_directory" {
   provisioner "local-exec" {
-    command = "aws s3 sync $SOURCE_DIR s3://$WEBSITE_BUCKET --region $BUCKET_REGION"
+    command = "aws s3 sync $SOURCE_DIR s3://$WEBSITE_BUCKET --region $BUCKET_REGION --acl public-read --profile ms92"
 
     environment {
       SOURCE_DIR     = "${var.website_source}"
