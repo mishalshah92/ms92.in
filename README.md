@@ -1,4 +1,6 @@
-# All about ms92.in
+# ms92.in
+
+![](https://github.com/mishalshah92/ms92.in/workflows/docker-template-ci/badge.svg)
 
 ## Introduction
 
@@ -8,7 +10,6 @@ You can reach me out here...
 
 * LinkedIn: https://www.linkedin.com/in/mishalshah92/
 * Skype: mishalshah92
-* Zoom: https://zoom.us/j/2658733520
 
 ## Building
 
@@ -16,14 +17,24 @@ First ensure your development environment is up-to-date.
 
 Next clone this repository and run make:
 
-    $ make
-    
-    Note: This build is a static website.
+```shell script
+$ make
+```
+Note: This build is a static website.
     
 To deploy application, run
- 
-    $ make build deploy
+
+```shell script
+$ make build deploy
+```
     
 To clean your build, run
- 
-    $ make clean
+
+```shell script
+$ make clean
+```
+    
+## Overview
+
+- **Build Pipeline**: <https://github.com/mishalshah92/ms92.in/actions/new>
+- **Maintainer**: mishalshah92@gmail.com
