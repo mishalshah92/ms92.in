@@ -16,6 +16,6 @@ terraform {
     bucket = "ms92-tf-states"
     dynamodb_table = "ms92-tf-states"
     encrypt = true
-    key = "mishalshah92/ms92_in/"
+    key = "mishalshah92/ms92_in/tfstate"
   }
 }
