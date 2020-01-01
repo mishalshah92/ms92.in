@@ -1,6 +1,6 @@
 variable "bucket_name" {
   type = string
-  default = "demo.ms92.in"
+  default = "www.ms92.in"
 }
 
 variable "index_page" {
