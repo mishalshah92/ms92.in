@@ -9,6 +9,7 @@ This is the portfolio website.
 You can reach me out here...
 
 * LinkedIn: https://www.linkedin.com/in/mishalshah92/
+* Goto: http://www.ms92.in
 * Skype: mishalshah92
 
 ## Building
