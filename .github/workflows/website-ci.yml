@@ -17,8 +17,9 @@ jobs:
         uses: marocchino/setup-terraform@v1
         with:
           version: "0.12.15"
+      - name: Set up AWSCli
+        uses: chrislennon/action-aws-cli@v1.1
       - name: Build & Plan
         run: make build plan
       - name: publish
-        if: github.ref == 'refs/heads/master'
         run: make apply
