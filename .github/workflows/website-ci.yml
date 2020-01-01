@@ -22,4 +22,5 @@ jobs:
       - name: Build & Plan
         run: make build plan
       - name: publish
+        if: github.ref == 'refs/heads/master'
         run: make apply
