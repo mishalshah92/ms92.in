@@ -1,18 +1,21 @@
 variable "bucket_name" {
-  type = "string"
+  type = string
+  default = "demo.ms92.in"
 }
 
 variable "index_page" {
-  type    = "string"
+  type    = string
   default = "index.html"
 }
 
 variable "error_page" {
-  type    = "string"
+  type    = string
   default = "error.html"
 }
 
 variable "tags" {
-  type    = "map"
-  default = {}
+  type = map(string)
+  default = {
+    owner = "mishalshah92"
+  }
 }
