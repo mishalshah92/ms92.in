@@ -10,6 +10,7 @@ build:
 	cp -r src/main/ build/website
 
 plan:
+	cd build && ls
 	cd build && terraform init && terraform validate && terraform plan
 
 apply:
