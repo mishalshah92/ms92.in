@@ -1,6 +1,6 @@
 # ms92.in
 
-![](https://github.com/mishalshah92/ms92.in/workflows/docker-template-ci/badge.svg)
+![](https://github.com/mishalshah92/ms92.in/workflows/website-ci/badge.svg)
 
 ## Introduction
 
