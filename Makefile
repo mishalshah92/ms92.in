@@ -5,9 +5,9 @@ clean:
 
 build:
 	mkdir -p build
-	cp -r terraform/ build
+	cp -r terraform/. build/
 	mkdir -p website
-	cp -r src/main/ build/website
+	cp -r src/main/. build/website/
 
 plan:
 	cd build && ls
