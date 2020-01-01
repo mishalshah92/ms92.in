@@ -3,14 +3,14 @@
 clean:
 	rm -rf ./build
 
-build: clean
+build:
 	mkdir -p build
-	cp -r terraform/ build
+	cp -r terraform/. build/
 	mkdir -p website
-	cp -r src/main/ build/website
+	cp -r src/main/. build/website/
 
-plan: build
-	cd build/ && terraform init && terraform validate && terraform plan -state= -out plan
+plan:
+	cd build && terraform init && terraform validate && terraform plan
 
-apply: plan
-	cd build/ && terraform apply -auto-approve plan
+apply:
+	cd build && terraform apply -auto-approve

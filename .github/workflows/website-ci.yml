@@ -1,0 +1,26 @@
+name: website-ci
+
+on: [push, pull_request]
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
+
+jobs:
+  build:
+    name: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Set up Terraform
+        uses: marocchino/setup-terraform@v1
+        with:
+          version: "0.12.15"
+      - name: Set up AWSCli
+        uses: chrislennon/action-aws-cli@v1.1
+      - name: Build & Plan
+        run: make build plan
+      - name: publish
+        if: github.ref == 'refs/heads/master'
+        run: make apply
