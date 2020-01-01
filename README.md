@@ -13,26 +13,26 @@ You can reach me out here...
 
 ## Building
 
-First ensure your development environment is up-to-date. 
+- `$ make build`
 
-Next clone this repository and run make:
-
-```shell script
-$ make
-```
-Note: This build is a static website.
+    It generate the `build/` directory with below structure.
+    ```shell script
+        build/
+          |- *.tf
+          |- website/
+    ```
     
-To deploy application, run
-
-```shell script
-$ make build deploy
-```
+- `$ make plan`
     
-To clean your build, run
+    Execute command `$ terraform init && terraform plan`.
 
-```shell script
-$ make clean
-```
+- `make apply`
+    
+    Execute command `$ terraform apply`.
+    
+- `make clean`
+    
+    It will delete the `build/` directory.
     
 ## Overview
 
