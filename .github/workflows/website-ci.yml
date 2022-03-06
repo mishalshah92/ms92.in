@@ -1,6 +1,6 @@
 name: website-ci
 
-on: [push, pull_request]
+on: []
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key }}

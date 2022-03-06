@@ -9,7 +9,7 @@ variable "aws_region" {
 }
 
 terraform {
-  required_version = "> 0.12"
+  required_version = "> "
 
   backend "s3" {
     region = "ap-south-1"
